@@ -22,7 +22,14 @@ chai();*///undefined answer with this.name and a lot of things answer as "this"
 }*/
 //chat();// {} is the answer with this keyword in arrow function
 
-const addTwo = (num1, num2) => (num1 + num2);
+/*const addTwo = (num1, num2) => (num1 + num2);
 const Two = (num3, num4) => ({username: "Diamond"});
 console.log(addTwo(15,20));
-console.log(Two(3,4));
+console.log(Two(3,4));*/
+
+(function chai() {
+    console.log("Spring connected");
+})();
+(() => {
+    console.log("Spring connected again");
+})()//Immediate invoked function expression is basically used when we want a function to be prevented from the traffic of the global scope.
